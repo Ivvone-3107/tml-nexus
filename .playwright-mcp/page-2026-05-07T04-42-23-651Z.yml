@@ -1,0 +1,527 @@
+- generic [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img "TML NEXUS" [ref=e5]
+        - generic [ref=e6]: TML NEXUS
+      - generic [ref=e7]:
+        - link "El Problema" [ref=e8] [cursor=pointer]:
+          - /url: "#problema"
+        - link "Plataforma" [ref=e9] [cursor=pointer]:
+          - /url: "#features"
+        - link "Implementación" [ref=e10] [cursor=pointer]:
+          - /url: "#process"
+        - link "FAQ" [ref=e11] [cursor=pointer]:
+          - /url: "#faq"
+      - button "Contactar Ventas" [ref=e14] [cursor=pointer]
+  - main [ref=e15]:
+    - generic [ref=e20]:
+      - generic [ref=e22]:
+        - img [ref=e23]
+        - generic [ref=e25]: CMMS — Trazabilidad real
+      - heading "El Mantenimiento que habla el idioma de tu industria." [level=1] [ref=e27]
+      - paragraph [ref=e28]: Visualiza tu operación en tiempo real con dashboards precisos, una app móvil nativa y PM exacto. Centraliza tu gestión en una sola plataforma de rápida implementación.
+      - generic [ref=e29]:
+        - button "Ver demo en vivo" [ref=e32] [cursor=pointer]:
+          - text: Ver demo en vivo
+          - img
+        - button "Explorar plataforma →" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: JP
+          - generic [ref=e37]: MR
+          - generic [ref=e38]: AL
+          - generic [ref=e39]: CS
+        - generic [ref=e40]:
+          - paragraph [ref=e41]: +200 técnicos activos
+          - paragraph [ref=e42]: confían su operación diaria a Nexus TML
+      - generic [ref=e44]:
+        - generic [ref=e50]: app.nexustml.cl/dashboard
+        - img "Nexus TML — Dashboard Operativo" [ref=e51]
+    - generic [ref=e53]:
+      - paragraph [ref=e54]: Industrias que operan con Nexus TML
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: 🏭
+          - generic [ref=e58]: Manufactura
+        - generic [ref=e59]:
+          - generic [ref=e60]: ⛏️
+          - generic [ref=e61]: Minería
+        - generic [ref=e62]:
+          - generic [ref=e63]: 🌊
+          - generic [ref=e64]: Acuicultura
+        - generic [ref=e65]:
+          - generic [ref=e66]: 🏗️
+          - generic [ref=e67]: Construcción
+        - generic [ref=e68]:
+          - generic [ref=e69]: ⚡
+          - generic [ref=e70]: Energía
+        - generic [ref=e71]:
+          - generic [ref=e72]: 🚢
+          - generic [ref=e73]: Logística
+        - generic [ref=e74]:
+          - generic [ref=e75]: 🏥
+          - generic [ref=e76]: Salud
+    - generic [ref=e141]:
+      - generic [ref=e142]:
+        - paragraph [ref=e143]: El problema
+        - heading "El mantenimiento reactivo le está costando millones a tu planta" [level=2] [ref=e144]:
+          - generic [ref=e146]: El
+          - generic [ref=e148]: mantenimiento
+          - generic [ref=e150]: reactivo
+          - generic [ref=e152]: le
+          - generic [ref=e154]: está
+          - generic [ref=e156]: costando
+          - generic [ref=e158]: millones
+          - generic [ref=e160]: a
+          - generic [ref=e162]: tu
+          - generic [ref=e164]: planta
+        - paragraph [ref=e165]: "La mayoría de las plantas industriales operan con herramientas fragmentadas, procesos manuales y cero visibilidad sobre sus activos. El resultado es predecible:"
+      - generic [ref=e166]:
+        - generic [ref=e168]:
+          - img [ref=e169]
+          - generic [ref=e171]: 68%
+          - heading "del mantenimiento es reactivo" [level=3] [ref=e172]
+          - paragraph [ref=e173]: Apagar incendios en lugar de prevenirlos cuesta hasta 3x más que un programa preventivo bien ejecutado.
+        - generic [ref=e175]:
+          - img [ref=e176]
+          - generic [ref=e179]: 42%
+          - heading "del tiempo se pierde buscando datos" [level=3] [ref=e180]
+          - paragraph [ref=e181]: Planillas Excel, papeles y sistemas desconectados generan información fragmentada e inconsistente.
+        - generic [ref=e183]:
+          - img [ref=e184]
+          - generic [ref=e187]: 5-20%
+          - heading "del presupuesto se desperdicia" [level=3] [ref=e188]
+          - paragraph [ref=e189]: "Sin visibilidad de KPIs, las decisiones se toman a ciegas: repuestos innecesarios, paradas evitables, personal mal asignado."
+    - generic [ref=e192]:
+      - generic [ref=e193]:
+        - paragraph [ref=e194]: ¿Por qué Nexus TML?
+        - heading "Construido para el técnico, no para el consultor" [level=2] [ref=e195]:
+          - generic [ref=e197]: Construido
+          - generic [ref=e199]: para
+          - generic [ref=e201]: el
+          - generic [ref=e203]: técnico,
+          - generic [ref=e205]: "no"
+          - generic [ref=e207]: para
+          - generic [ref=e209]: el
+          - generic [ref=e211]: consultor
+        - heading "Construido para el técnico, no para el consultor" [level=2] [ref=e212]
+        - paragraph [ref=e213]: La competencia vende implementaciones interminables. Nosotros te entregamos un sistema 100% operativo y configurado en solo 8 semanas.
+      - generic [ref=e214]:
+        - generic [ref=e217]:
+          - generic [ref=e218]: Soluciones genéricas
+          - generic [ref=e219]:
+            - generic [ref=e220]:
+              - generic [ref=e221]: ❌
+              - paragraph [ref=e222]:
+                - text: Implementación de
+                - strong [ref=e223]: 3–6 meses
+                - text: con consultoras externas
+            - generic [ref=e224]:
+              - generic [ref=e225]: ❌
+              - paragraph [ref=e226]:
+                - text: Interfaz de escritorio,
+                - strong [ref=e227]: alta resistencia al cambio
+                - text: en terreno
+            - generic [ref=e228]:
+              - generic [ref=e229]: ❌
+              - paragraph [ref=e230]:
+                - text: Planificación rígida,
+                - strong [ref=e231]: desconectada de los turnos reales
+                - text: de la planta
+            - generic [ref=e232]:
+              - generic [ref=e233]: ❌
+              - paragraph [ref=e234]:
+                - text: Análisis reactivo y manual, dependiente del
+                - strong [ref=e235]: ensayo y error
+            - generic [ref=e236]:
+              - generic [ref=e237]: ❌
+              - paragraph [ref=e238]:
+                - text: Contratos anuales amarrados y
+                - strong [ref=e239]: soporte lento
+                - text: o en inglés
+            - generic [ref=e240]:
+              - generic [ref=e241]: ❌
+              - paragraph [ref=e242]:
+                - text: Datos en silos, requiere
+                - strong [ref=e243]: exportar a Excel
+                - text: para ver indicadores
+        - generic [ref=e245]: vs
+        - generic [ref=e248]:
+          - generic [ref=e249]:
+            - generic [ref=e250]: 🇨🇱 Hecho en Chile
+            - img "Nexus TML" [ref=e251]
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - generic [ref=e254]: ✅
+              - paragraph [ref=e255]:
+                - text: Activos y equipos configurados y operando en
+                - strong [ref=e256]: 8 semanas
+            - generic [ref=e257]:
+              - generic [ref=e258]: ✅
+              - paragraph [ref=e259]:
+                - strong [ref=e260]: "App nativa iOS/Android:"
+                - text: el técnico cierra OTs en solo 3 clics
+            - generic [ref=e261]:
+              - generic [ref=e262]: ✅
+              - paragraph [ref=e263]:
+                - text: Programación adaptable a la
+                - strong [ref=e264]: rotación y carga de trabajo
+                - text: real
+            - generic [ref=e265]:
+              - generic [ref=e266]: ✅
+              - paragraph [ref=e267]:
+                - strong [ref=e268]: "CMMS con IA propia:"
+                - text: asistencia inteligente para diagnósticos y pautas
+            - generic [ref=e269]:
+              - generic [ref=e270]: ✅
+              - paragraph [ref=e271]:
+                - strong [ref=e272]: Pricing flexible
+                - text: sin amarres y soporte técnico
+                - strong [ref=e273]: en tiempo real
+            - generic [ref=e274]:
+              - generic [ref=e275]: ✅
+              - paragraph [ref=e276]:
+                - strong [ref=e277]: "Dashboard gerencial automático:"
+                - text: Disponibilidad, MTBF y MTTR
+      - button "Solicita una demo gratis" [ref=e279] [cursor=pointer]:
+        - text: Solicita una demo gratis
+        - img
+    - generic [ref=e282]:
+      - generic [ref=e283]:
+        - paragraph [ref=e284]: Resultados medibles
+        - heading "Métricas reales de plantas en producción" [level=2] [ref=e285]:
+          - generic [ref=e287]: Métricas
+          - generic [ref=e289]: reales
+          - generic [ref=e291]: de
+          - generic [ref=e293]: plantas
+          - generic [ref=e295]: en
+          - generic [ref=e297]: producción
+      - generic [ref=e298]:
+        - generic [ref=e299]:
+          - generic [ref=e300]:
+            - generic [ref=e301]: "0"
+            - generic [ref=e302]: "%"
+          - paragraph [ref=e303]: Disponibilidad Mtto
+          - paragraph [ref=e304]: Uptime de activos críticos
+        - generic [ref=e305]:
+          - generic [ref=e306]:
+            - generic [ref=e307]: "0"
+            - generic [ref=e308]: d
+          - paragraph [ref=e309]: MTBF promedio
+          - paragraph [ref=e310]: Tiempo medio entre fallas
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - generic [ref=e313]: "0"
+            - generic [ref=e314]: h
+          - paragraph [ref=e315]: MTTR promedio
+          - paragraph [ref=e316]: Tiempo medio de reparación
+        - generic [ref=e317]:
+          - generic [ref=e318]:
+            - generic [ref=e319]: "0"
+            - generic [ref=e320]: sem
+          - paragraph [ref=e321]: Go-live completo
+          - paragraph [ref=e322]: De kickoff a producción
+    - generic [ref=e325]:
+      - generic [ref=e326]:
+        - paragraph [ref=e327]: La plataforma
+        - heading "Todo lo que necesitas para pasar de reactivo a predictivo" [level=2] [ref=e328]:
+          - generic [ref=e330]: Todo
+          - generic [ref=e332]: lo
+          - generic [ref=e334]: que
+          - generic [ref=e336]: necesitas
+          - generic [ref=e338]: para
+          - generic [ref=e340]: pasar
+          - generic [ref=e342]: de
+          - generic [ref=e344]: reactivo
+          - generic [ref=e346]: a
+          - generic [ref=e348]: predictivo
+        - paragraph [ref=e349]: Seis módulos integrados que cubren el ciclo completo de mantenimiento — desde el aviso inicial hasta el análisis de causa raíz.
+      - generic [ref=e350]:
+        - generic [ref=e352]:
+          - img [ref=e354]
+          - heading "Gestión de Avisos" [level=3] [ref=e357]
+          - paragraph [ref=e358]: Tickets con ubicación técnica, equipo, síntomas y evidencia fotográfica. Un solo flujo para todas las ocurrencias.
+        - generic [ref=e360]:
+          - img [ref=e362]
+          - heading "Órdenes de Trabajo" [level=3] [ref=e364]
+          - paragraph [ref=e365]: Creación automática de OTs por criticidad. Flujo completo de gestión, asignación y cierre con trazabilidad.
+        - generic [ref=e367]:
+          - img [ref=e369]
+          - heading "Gestión de Activos" [level=3] [ref=e373]
+          - paragraph [ref=e374]: Inventario a nivel planta, ficha técnica por equipo, historial de intervenciones y control de repuestos.
+        - generic [ref=e376]:
+          - img [ref=e378]
+          - heading "Configuración Multi-Planta" [level=3] [ref=e381]
+          - paragraph [ref=e382]: Sucursales, roles por perfil, templates de procedimientos y configuración de flujos por tipo de mantenimiento.
+        - generic [ref=e384]:
+          - img [ref=e386]
+          - heading "Dashboard de KPIs" [level=3] [ref=e388]
+          - paragraph [ref=e389]: MTBF, MTTR, disponibilidad, cumplimiento PM, backlog, costos y recurrencia — todo filtrable en tiempo real.
+        - generic [ref=e391]:
+          - img [ref=e393]
+          - heading "Integraciones Enterprise" [level=3] [ref=e395]
+          - paragraph [ref=e396]: Conexión nativa con SAP, ERP, IoT y Power BI. API abierta para integraciones personalizadas.
+    - generic [ref=e401]:
+      - generic [ref=e402]:
+        - generic [ref=e405]: Dashboard Web
+        - heading "Ve tus indicadores. Toma decisiones hoy." [level=2] [ref=e406]
+        - paragraph [ref=e407]: El dashboard de Nexus TML consolida todos tus KPIs críticos en una sola pantalla. No para el informe del lunes — para decidir ahora, en terreno, con datos reales.
+        - list [ref=e408]:
+          - listitem [ref=e409]:
+            - img [ref=e410]
+            - generic [ref=e413]: ¿Tu MTBF está bajando? Identifica el activo y actúa antes de la parada
+          - listitem [ref=e414]:
+            - img [ref=e415]
+            - generic [ref=e418]: ¿Tu MTTR está subiendo? Es una señal de gestión, no de mala suerte
+          - listitem [ref=e419]:
+            - img [ref=e420]
+            - generic [ref=e423]: "Top 5 malos actores: sabe dónde se va el 80% de tus horas de correctivo"
+          - listitem [ref=e424]:
+            - img [ref=e425]
+            - generic [ref=e428]: "PM bajo 90%: el sistema te avisa para que intervengas a tiempo"
+        - link "Ver dashboard en acción →" [ref=e430] [cursor=pointer]:
+          - /url: "#cta"
+          - button "Ver dashboard en acción →" [ref=e431]
+      - generic [ref=e433]:
+        - generic [ref=e436]:
+          - generic [ref=e442]: app.nexustml.cl/dashboard
+          - img "Nexus TML — Dashboard Operativo" [ref=e444]
+        - generic [ref=e445]:
+          - text: Disponibilidad
+          - paragraph [ref=e446]: 98.2%
+          - text: Últimas 24h
+        - generic [ref=e447]:
+          - text: OTs críticas
+          - paragraph [ref=e448]: "0"
+          - text: Sin pendientes
+        - generic [ref=e449]:
+          - text: Cumplimiento PM
+          - paragraph [ref=e450]: 97%
+          - text: "Meta: 90%"
+        - generic [ref=e451]:
+          - text: MTBF
+          - paragraph [ref=e452]: 168h
+          - text: Tendencia ↑
+        - generic [ref=e453]:
+          - text: MTTR
+          - paragraph [ref=e454]: 2.4h
+          - text: Promedio mensual
+    - generic [ref=e459]:
+      - generic [ref=e460]:
+        - img "Nexus TML — App móvil MTBF y MTTR" [ref=e462]
+        - img "Nexus TML — App móvil Dashboard" [ref=e464]
+      - generic [ref=e465]:
+        - generic [ref=e468]: App Móvil
+        - heading "Tus técnicos conectados desde cualquier lugar" [level=2] [ref=e469]
+        - paragraph [ref=e470]: El mismo poder del dashboard web en el bolsillo de cada técnico. Resumen operativo, confiabilidad, reportes y gestión de OTs desde el celular.
+        - list [ref=e471]:
+          - listitem [ref=e472]:
+            - img [ref=e473]
+            - generic [ref=e476]: Disponibilidad y PM siempre visibles — no al final del mes
+          - listitem [ref=e477]:
+            - img [ref=e478]
+            - generic [ref=e481]: "MTBF y MTTR actualizados: mide si tu gestión mejora mes a mes"
+          - listitem [ref=e482]:
+            - img [ref=e483]
+            - generic [ref=e486]: Reportes de OTs, performance y análisis de tiempos
+          - listitem [ref=e487]:
+            - img [ref=e488]
+            - generic [ref=e491]: Notificaciones push cuando una OT urgente se abre
+        - button "Explorar app →" [ref=e493] [cursor=pointer]
+    - generic [ref=e498]:
+      - generic [ref=e499]:
+        - generic [ref=e502]: Diferenciador único
+        - heading "Seguridad que no se puede saltarse" [level=2] [ref=e503]
+        - paragraph [ref=e504]: "Los CMMS tradicionales tratan la seguridad como un módulo opcional. En Nexus TML es un gate obligatorio: el técnico no puede iniciar una OT sin completar el AST y el LOTO. Sin excepción."
+        - list [ref=e505]:
+          - listitem [ref=e506]:
+            - img [ref=e507]
+            - generic [ref=e510]: AST con checklist de 10 puntos y análisis de peligros
+          - listitem [ref=e511]:
+            - img [ref=e512]
+            - generic [ref=e515]: LOTO con bloqueo secuencial y foto-evidencia por punto
+          - listitem [ref=e516]:
+            - img [ref=e517]
+            - generic [ref=e520]: Verificación de energía cero antes de intervenir
+          - listitem [ref=e521]:
+            - img [ref=e522]
+            - generic [ref=e525]: Firma digital de técnico y supervisor en móvil
+      - generic [ref=e526]:
+        - generic [ref=e527]:
+          - generic [ref=e528]:
+            - img [ref=e530]
+            - generic [ref=e533]:
+              - paragraph [ref=e534]: OT creada
+              - paragraph [ref=e535]: Asignada al técnico con prioridad y activo
+          - img [ref=e537]
+        - generic [ref=e539]:
+          - generic [ref=e540]:
+            - img [ref=e542]
+            - generic [ref=e546]:
+              - paragraph [ref=e547]: "Gate #1 — AST"
+              - paragraph [ref=e548]: 10 ítems · peligros · EPP · firma supervisor
+            - generic [ref=e549]: OBLIGATORIO
+          - img [ref=e551]
+        - generic [ref=e553]:
+          - generic [ref=e554]:
+            - img [ref=e556]
+            - generic [ref=e559]:
+              - paragraph [ref=e560]: "Gate #2 — LOTO"
+              - paragraph [ref=e561]: Bloqueo secuencial · energía cero · foto evidencia
+            - generic [ref=e562]: SI APLICA
+          - img [ref=e564]
+        - generic [ref=e567]:
+          - img [ref=e569]
+          - generic [ref=e571]:
+            - paragraph [ref=e572]: OT en Progreso
+            - paragraph [ref=e573]: Solo accesible cuando todos los gates están aprobados
+          - generic [ref=e574]: HABILITADA
+    - generic [ref=e79]:
+      - generic [ref=e576]:
+        - paragraph [ref=e577]: Implementación
+        - heading "De 0 a productivo en 8 semanas" [level=2] [ref=e578]:
+          - generic [ref=e580]: De
+          - generic [ref=e582]: "0"
+          - generic [ref=e584]: a
+          - generic [ref=e586]: productivo
+          - generic [ref=e588]: en
+          - generic [ref=e590]: "8"
+          - generic [ref=e592]: semanas
+        - paragraph [ref=e593]: Un proceso estructurado con acompañamiento continuo. Líder de proyecto dedicado, consultor TI y entrenamiento por perfil funcional incluidos.
+      - generic [ref=e81]:
+        - generic [ref=e595]:
+          - img [ref=e598]
+          - generic [ref=e602]:
+            - generic [ref=e603]:
+              - heading "Análisis y Diseño" [level=3] [ref=e604]
+              - generic [ref=e605]: Sem 1-2
+            - paragraph [ref=e606]: Levantamiento de requerimientos funcionales y técnicos. Definición de alcance, KPIs objetivo y plan de migración de datos.
+        - generic [ref=e608]:
+          - img [ref=e611]
+          - generic [ref=e614]:
+            - generic [ref=e615]:
+              - heading "Implementación" [level=3] [ref=e616]
+              - generic [ref=e617]: Sem 2-4
+            - paragraph [ref=e618]: Configuración de módulos, carga de datos maestros, personalización de flujos y configuración de integraciones.
+        - generic [ref=e620]:
+          - img [ref=e623]
+          - generic [ref=e626]:
+            - generic [ref=e627]:
+              - heading "Pruebas QA" [level=3] [ref=e628]
+              - generic [ref=e629]: Sem 4-5
+            - paragraph [ref=e630]: Ciclo de pruebas funcionales en ambiente de calidad. Validación de flujos críticos y ajustes antes de producción.
+        - generic [ref=e632]:
+          - img [ref=e635]
+          - generic [ref=e640]:
+            - generic [ref=e641]:
+              - heading "Entrenamiento" [level=3] [ref=e642]
+              - generic [ref=e643]: Sem 5-6
+            - paragraph [ref=e644]: "Programa \"Train the Users\" diferenciado por perfil: administrador, supervisor y técnico. Práctica guiada en ambiente real."
+        - generic [ref=e646]:
+          - img [ref=e649]
+          - generic [ref=e651]:
+            - generic [ref=e652]:
+              - heading "Marcha Blanca Productiva" [level=3] [ref=e653]
+              - generic [ref=e654]: Sem 6-8
+            - paragraph [ref=e655]: Validación en producción con usuarios finales. Soporte dedicado del equipo TML NEXUS durante la transición completa.
+    - generic [ref=e659]:
+      - generic [ref=e660]:
+        - paragraph [ref=e682]: FAQ
+        - heading "Preguntas Frecuentes" [level=2] [ref=e683]
+        - paragraph [ref=e684]: Todo lo que necesitás saber antes de dar el siguiente paso.
+      - generic [ref=e685]:
+        - generic [ref=e686]:
+          - generic [ref=e687]:
+            - heading "¿Qué es TML NEXUS y en qué se diferencia de un CMMS tradicional?" [level=3] [ref=e688]:
+              - button "¿Qué es TML NEXUS y en qué se diferencia de un CMMS tradicional?" [expanded] [active] [ref=e689]:
+                - img [ref=e690]
+                - text: ¿Qué es TML NEXUS y en qué se diferencia de un CMMS tradicional?
+                - img
+            - region "¿Qué es TML NEXUS y en qué se diferencia de un CMMS tradicional?" [ref=e724]:
+              - generic [ref=e725]: "TML NEXUS es una plataforma SaaS de gestión integral de mantenimiento industrial. A diferencia de los CMMS tradicionales que solo registran tareas, NEXUS transforma el mantenimiento en una actividad estratégica: predice fallas, automatiza flujos de trabajo y genera dashboards con KPIs en tiempo real."
+          - heading "¿Con qué sistemas se integra?" [level=3] [ref=e694]:
+            - button "¿Con qué sistemas se integra?" [ref=e695]:
+              - img [ref=e696]
+              - text: ¿Con qué sistemas se integra?
+              - img
+          - heading "¿Cuánto demora la implementación?" [level=3] [ref=e700]:
+            - button "¿Cuánto demora la implementación?" [ref=e701]:
+              - img [ref=e702]
+              - text: ¿Cuánto demora la implementación?
+              - img
+        - generic [ref=e705]:
+          - heading "¿Incluye capacitación de usuarios?" [level=3] [ref=e707]:
+            - button "¿Incluye capacitación de usuarios?" [ref=e708]:
+              - img [ref=e709]
+              - text: ¿Incluye capacitación de usuarios?
+              - img
+          - heading "¿Desde qué dispositivos se puede acceder?" [level=3] [ref=e713]:
+            - button "¿Desde qué dispositivos se puede acceder?" [ref=e714]:
+              - img [ref=e715]
+              - text: ¿Desde qué dispositivos se puede acceder?
+              - img
+          - heading "¿Cómo funciona el modelo de licenciamiento?" [level=3] [ref=e719]:
+            - button "¿Cómo funciona el modelo de licenciamiento?" [ref=e720]:
+              - img [ref=e721]
+              - text: ¿Cómo funciona el modelo de licenciamiento?
+              - img
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - img "TML NEXUS" [ref=e87]
+            - generic [ref=e88]: TML NEXUS
+          - paragraph [ref=e89]: Plataforma SaaS para la gestión integral de mantenimiento industrial. Centraliza datos, automatiza flujos y transforma tu operación.
+          - link [ref=e91] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e92]
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - heading "Plataforma" [level=4] [ref=e96]
+            - list [ref=e97]:
+              - listitem [ref=e98]:
+                - link "Funcionalidades" [ref=e99] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e100]:
+                - link "Dashboard de KPIs" [ref=e101] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e102]:
+                - link "Integraciones" [ref=e103] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e104]:
+                - link "Métricas" [ref=e105] [cursor=pointer]:
+                  - /url: "#stats"
+          - generic [ref=e106]:
+            - heading "Empresa" [level=4] [ref=e107]
+            - list [ref=e108]:
+              - listitem [ref=e109]:
+                - link "Implementación" [ref=e110] [cursor=pointer]:
+                  - /url: "#process"
+              - listitem [ref=e111]:
+                - link "Preguntas Frecuentes" [ref=e112] [cursor=pointer]:
+                  - /url: "#faq"
+              - listitem [ref=e113]:
+                - link "Contactar Ventas" [ref=e114] [cursor=pointer]:
+                  - /url: "#cta"
+              - listitem [ref=e115]:
+                - link "Agendar Demo" [ref=e116] [cursor=pointer]:
+                  - /url: "#cta"
+          - generic [ref=e117]:
+            - heading "Legal" [level=4] [ref=e118]
+            - list [ref=e119]:
+              - listitem [ref=e120]:
+                - link "Política de Privacidad" [ref=e121] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e122]:
+                - link "Términos de Servicio" [ref=e123] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e124]:
+                - link "Política de Cookies" [ref=e125] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e126]:
+        - paragraph [ref=e127]: © 2026 TML NEXUS. Todos los derechos reservados.
+        - paragraph [ref=e128]: Hecho en Chile
+  - button "Open Next.js Dev Tools" [ref=e134] [cursor=pointer]:
+    - img [ref=e135]
+  - alert [ref=e138]

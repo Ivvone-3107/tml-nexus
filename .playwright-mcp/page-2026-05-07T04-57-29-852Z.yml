@@ -1,0 +1,278 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - img "TML NEXUS" [ref=e5]
+        - generic [ref=e6]: TML NEXUS
+      - generic [ref=e7]:
+        - link "El Problema" [ref=e8] [cursor=pointer]:
+          - /url: "#problema"
+        - link "Plataforma" [ref=e9] [cursor=pointer]:
+          - /url: "#features"
+        - link "Implementación" [ref=e10] [cursor=pointer]:
+          - /url: "#process"
+        - link "FAQ" [ref=e11] [cursor=pointer]:
+          - /url: "#faq"
+      - button "Contactar Ventas" [ref=e14] [cursor=pointer]
+  - main [ref=e15]:
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e23]: CMMS — Trazabilidad real
+        - heading "El Mantenimiento que habla el idioma de tu industria." [level=1] [ref=e24]:
+          - text: El Mantenimiento
+          - text: que habla el idioma
+          - text: de tu industria.
+        - paragraph [ref=e25]: Visualiza tu operación en tiempo real con dashboards precisos, una app móvil nativa y PM exacto. Centraliza tu gestión en una sola plataforma de rápida implementación.
+        - generic [ref=e26]:
+          - button "Ver demo en vivo" [ref=e29] [cursor=pointer]:
+            - text: Ver demo en vivo
+            - img
+          - button "Explorar plataforma →" [ref=e30] [cursor=pointer]
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]: JP
+            - generic [ref=e34]: MR
+            - generic [ref=e35]: AL
+            - generic [ref=e36]: CS
+          - generic [ref=e37]:
+            - paragraph [ref=e38]: +200 técnicos activos
+            - paragraph [ref=e39]: confían su operación diaria a Nexus TML
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - generic [ref=e48]: app.nexustml.cl/dashboard
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - generic [ref=e51]:
+                - generic [ref=e52]: "N"
+                - generic [ref=e53]: NEXUS TML
+              - generic [ref=e54]:
+                - paragraph [ref=e55]: MANTENIMIENTO
+                - generic [ref=e56]:
+                  - img [ref=e57]
+                  - generic [ref=e62]: Dashboard
+                - generic [ref=e64]:
+                  - img [ref=e65]
+                  - generic [ref=e68]: Órdenes de Trabajo
+                - generic [ref=e69]:
+                  - img [ref=e70]
+                  - generic [ref=e73]: Solicitudes Correctivas
+                - generic [ref=e74]:
+                  - img [ref=e75]
+                  - generic [ref=e79]: Planes de Mantenimiento
+                - generic [ref=e80]:
+                  - img [ref=e81]
+                  - generic [ref=e83]: Reportes
+                - paragraph [ref=e84]: ACTIVOS
+                - generic [ref=e85]:
+                  - img [ref=e86]
+                  - generic [ref=e90]: Lista de Activos
+                - generic [ref=e91]:
+                  - img [ref=e92]
+                  - generic [ref=e94]: Repuestos
+                - paragraph [ref=e95]: CONFIGURACIÓN
+                - generic [ref=e96]:
+                  - img [ref=e97]
+                  - generic [ref=e100]: Sucursales
+                - generic [ref=e101]:
+                  - img [ref=e102]
+                  - generic [ref=e107]: Usuarios
+                - generic [ref=e108]:
+                  - img [ref=e109]
+                  - generic [ref=e111]: Roles
+                - generic [ref=e112]:
+                  - img [ref=e113]
+                  - generic [ref=e116]: Templates de Checklist
+              - generic [ref=e118]:
+                - generic [ref=e119]: NP
+                - generic [ref=e120]:
+                  - paragraph [ref=e121]: Nelson Parraguez
+                  - paragraph [ref=e122]: Jefe de Mantenimiento
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - paragraph [ref=e125]: Buenas Noches, Nelson · Sáb, 18 Abr
+                - heading "Resumen Operativo" [level=3] [ref=e126]
+              - generic [ref=e127]:
+                - generic [ref=e128]:
+                  - text: ●
+                  - paragraph [ref=e129]: 98.2%
+                  - paragraph [ref=e130]: DISPONIBILIDAD
+                  - paragraph [ref=e131]: Equipos operativos
+                - generic [ref=e132]:
+                  - text: ⚡
+                  - paragraph [ref=e133]: "0"
+                  - paragraph [ref=e134]: OTS CRÍTICAS
+                  - paragraph [ref=e135]: Sin urgencias
+                - generic [ref=e136]:
+                  - text: ⚠
+                  - paragraph [ref=e137]: "4"
+                  - paragraph [ref=e138]: PREV. VENCIDAS
+                  - paragraph [ref=e139]: Fuera de plazo
+                - generic [ref=e140]:
+                  - text: ⏱
+                  - paragraph [ref=e141]: 0.1 sem
+                  - paragraph [ref=e142]: BACKLOG
+                  - paragraph [ref=e143]: Trabajo acumulado
+              - paragraph [ref=e144]: Rendimiento Operativo
+              - generic [ref=e145]:
+                - generic [ref=e146]:
+                  - paragraph [ref=e147]: Cumplimiento de PM
+                  - img [ref=e149]:
+                    - generic [ref=e153]: 97%
+                    - generic [ref=e154]: completadas
+                  - generic [ref=e156]: ✓ Meta 90%
+                - generic [ref=e157]:
+                  - paragraph [ref=e158]: Proactivo vs Reactivo
+                  - img [ref=e160]
+                  - generic [ref=e163]:
+                    - generic [ref=e164]:
+                      - generic [ref=e167]: Proactivo
+                      - generic [ref=e168]: 14%
+                    - generic [ref=e169]:
+                      - generic [ref=e172]: Reactivo
+                      - generic [ref=e173]: 86%
+                - generic [ref=e174]:
+                  - paragraph [ref=e175]: Estado OTs
+                  - generic [ref=e180]:
+                    - generic [ref=e181]: Ene
+                    - generic [ref=e182]: Feb
+                    - generic [ref=e183]: Mar
+              - paragraph [ref=e184]: Activos y Costos
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - generic [ref=e187]:
+                    - img [ref=e188]
+                    - paragraph [ref=e191]: Confiabilidad (MTBF vs MTTR)
+                  - generic [ref=e192]:
+                    - generic [ref=e193]:
+                      - paragraph [ref=e194]: MTBF
+                      - paragraph [ref=e195]: 20.6h
+                    - generic [ref=e196]:
+                      - paragraph [ref=e197]: MTTR
+                      - paragraph [ref=e198]: 25.5h
+                    - generic [ref=e199]:
+                      - paragraph [ref=e200]: Fallas
+                      - paragraph [ref=e201]: "35"
+                  - img [ref=e202]
+                - generic [ref=e205]:
+                  - generic [ref=e206]:
+                    - img [ref=e207]
+                    - paragraph [ref=e209]: Top 5 Malos Actores
+                  - generic [ref=e210]:
+                    - generic [ref=e212]:
+                      - generic [ref=e213]: Extrusora L6 PVC
+                      - generic [ref=e214]:
+                        - generic [ref=e215]: 212.7h
+                        - generic [ref=e216]: "14"
+                    - generic [ref=e220]:
+                      - generic [ref=e221]: Extrusora L5 PVC
+                      - generic [ref=e222]:
+                        - generic [ref=e223]: 0.8h
+                        - generic [ref=e224]: "12"
+                    - generic [ref=e228]:
+                      - generic [ref=e229]: Enrollador L2 PEBD
+                      - generic [ref=e230]:
+                        - generic [ref=e231]: 441.4h
+                        - generic [ref=e232]: "7"
+                    - generic [ref=e236]:
+                      - generic [ref=e237]: Herramientas TMM
+                      - generic [ref=e238]:
+                        - generic [ref=e239]: 0.0h
+                        - generic [ref=e240]: "6"
+        - generic:
+          - generic: Disponibilidad
+          - generic: 98.2%
+          - generic: Actualizado en tiempo real
+        - generic:
+          - generic: Cumplimiento PM
+          - generic: 97%
+          - generic: "Meta: >90%"
+        - generic:
+          - generic: OTs críticas
+          - generic: "0"
+          - generic: Sin urgencias
+        - generic:
+          - generic: MTTR
+          - generic: 2.4h
+          - generic: Tiempo medio de reparación
+    - generic [ref=e244]:
+      - paragraph [ref=e245]: Industrias que operan con Nexus TML
+      - generic [ref=e246]:
+        - generic [ref=e247]:
+          - generic [ref=e248]: 🏭
+          - generic [ref=e249]: Manufactura
+        - generic [ref=e250]:
+          - generic [ref=e251]: ⛏️
+          - generic [ref=e252]: Minería
+        - generic [ref=e253]:
+          - generic [ref=e254]: 🌊
+          - generic [ref=e255]: Acuicultura
+        - generic [ref=e256]:
+          - generic [ref=e257]: 🏗️
+          - generic [ref=e258]: Construcción
+        - generic [ref=e259]:
+          - generic [ref=e260]: ⚡
+          - generic [ref=e261]: Energía
+        - generic [ref=e262]:
+          - generic [ref=e263]: 🚢
+          - generic [ref=e264]: Logística
+        - generic [ref=e265]:
+          - generic [ref=e266]: 🏥
+          - generic [ref=e267]: Salud
+    - generic [ref=e274]:
+      - generic [ref=e275]:
+        - generic [ref=e276]:
+          - generic [ref=e277]:
+            - img "TML NEXUS" [ref=e278]
+            - generic [ref=e279]: TML NEXUS
+          - paragraph [ref=e280]: Plataforma SaaS para la gestión integral de mantenimiento industrial. Centraliza datos, automatiza flujos y transforma tu operación.
+          - link [ref=e282] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e283]
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - heading "Plataforma" [level=4] [ref=e287]
+            - list [ref=e288]:
+              - listitem [ref=e289]:
+                - link "Funcionalidades" [ref=e290] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e291]:
+                - link "Dashboard de KPIs" [ref=e292] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e293]:
+                - link "Integraciones" [ref=e294] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e295]:
+                - link "Métricas" [ref=e296] [cursor=pointer]:
+                  - /url: "#stats"
+          - generic [ref=e297]:
+            - heading "Empresa" [level=4] [ref=e298]
+            - list [ref=e299]:
+              - listitem [ref=e300]:
+                - link "Implementación" [ref=e301] [cursor=pointer]:
+                  - /url: "#process"
+              - listitem [ref=e302]:
+                - link "Preguntas Frecuentes" [ref=e303] [cursor=pointer]:
+                  - /url: "#faq"
+              - listitem [ref=e304]:
+                - link "Contactar Ventas" [ref=e305] [cursor=pointer]:
+                  - /url: "#cta"
+              - listitem [ref=e306]:
+                - link "Agendar Demo" [ref=e307] [cursor=pointer]:
+                  - /url: "#cta"
+          - generic [ref=e308]:
+            - heading "Legal" [level=4] [ref=e309]
+            - list [ref=e310]:
+              - listitem [ref=e311]:
+                - link "Política de Privacidad" [ref=e312] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e313]:
+                - link "Términos de Servicio" [ref=e314] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e315]:
+                - link "Política de Cookies" [ref=e316] [cursor=pointer]:
+                  - /url: "#"
+      - generic [ref=e317]:
+        - paragraph [ref=e318]: © 2026 TML NEXUS. Todos los derechos reservados.
+        - paragraph [ref=e319]: Hecho en Chile
+  - button "Open Next.js Dev Tools" [ref=e325] [cursor=pointer]:
+    - img [ref=e326]

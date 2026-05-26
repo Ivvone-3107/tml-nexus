@@ -1,0 +1,16 @@
+[     148ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[     175ms] [LOG] [HMR] connected @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[     201ms] [WARNING] Image with src "/images/nexus-dashboard.png" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[     236ms] [WARNING] Image with src "/images/dashboard-mobile.jpeg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[     236ms] [WARNING] Image with src "/images/dashboard-mobile-2.jpeg" is using quality "100" which is not configured in images.qualities [75]. Please update your config to [100, 75].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   91611ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[   91716ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[  103542ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[  103571ms] [LOG] [Fast Refresh] done in 78ms @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[  114843ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[  114918ms] [LOG] [Fast Refresh] done in 78ms @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[  126246ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
+[  126321ms] [LOG] [Fast Refresh] done in 66ms @ http://localhost:3004/_next/static/chunks/05w9_next_dist_04sc5oc._.js:2431
