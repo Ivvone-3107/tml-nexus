@@ -210,7 +210,7 @@
 }
 
 .dark {
-  --background: oklch(10% 0.015 250);
+  --background: oklch(17% 0.06 235);
   --foreground: oklch(96.7% 0 0);
   --card: oklch(17% 0.01 250);
   --card-foreground: oklch(96.7% 0 0);
@@ -261,7 +261,7 @@
   --brand-accent-subtle: oklch(62% 0.19 245 / 8%);
   --brand-accent-glow: oklch(62% 0.19 245 / 40%);
 
-  --brand-bg-base: oklch(10% 0.015 250);
+  --brand-bg-base: oklch(17% 0.06 235);
   --brand-bg-subtle: oklch(12% 0.01 250);
   --brand-bg-muted: oklch(14% 0.01 250);
   --brand-bg-elevated: oklch(17% 0.01 250);
@@ -339,6 +339,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    padding-right: 0.05em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
   }
 
   .section-label {

@@ -21,6 +21,7 @@ import {
   CalendarCheck,
 } from "lucide-react"
 import { LinkedInLogoIcon } from "@radix-ui/react-icons"
+import { PhoneNuevaOT } from "@/components/phone-nueva-ot"
 
 import { Button } from "@/components/ui/button"
 import { NumberTicker } from "@/components/ui/number-ticker"
@@ -41,6 +42,17 @@ import {
 } from "@/components/ui/gsap-parallax"
 
 import { HeroDashboardMockup } from "@/components/hero-dashboard-mockup"
+import { Marquee } from "@/components/ui/marquee"
+import {
+  Factory,
+  Pickaxe,
+  Fish,
+  HardHat,
+  Bolt,
+  Ship,
+  HeartPulse,
+} from "lucide-react"
+// Phone screens use real screenshots now
 import { Faq4 } from "@/components/faq/faq-4"
 import { VsComparison } from "@/components/vs-comparison"
 import { MobileShowcase } from "@/components/mobile-showcase"
@@ -206,18 +218,18 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className={`fixed top-0 right-0 left-0 z-50 transition-all duration-400 ${scrolled ? "border-b border-white/[0.055] bg-[rgba(3,9,20,0.88)] backdrop-blur-[32px] backdrop-saturate-[180%]" : "border-b border-transparent bg-transparent"}`}>
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
-        <a href="#" className="flex items-center gap-2.5">
-          <Image src="/images/logo-nexus.png" alt="TML NEXUS" width={36} height={36} className="rounded-lg" />
-          <span className="text-lg font-bold tracking-tight">TML NEXUS</span>
+    <nav className={`fixed top-0 right-0 left-0 z-50 transition-all duration-400 ${scrolled ? "border-b border-white/[0.06] bg-[rgba(10,18,40,0.85)] backdrop-blur-[32px] backdrop-saturate-[180%]" : "border-b border-transparent bg-transparent"}`}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
+        <a href="#" className="flex items-center gap-3">
+          <Image src="/images/logo-nexus-white.png" alt="TML NEXUS" width={36} height={36} className="h-9 w-auto" />
+          <span className="text-xl font-bold tracking-tight">TML NEXUS</span>
         </a>
-        <div className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center gap-10 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-[13.5px] font-medium text-muted-foreground/65 transition-colors hover:text-foreground"
+              className="text-[15px] font-medium text-white/50 transition-colors hover:text-white"
             >
               {link.label}
             </a>
@@ -226,7 +238,7 @@ function Navbar() {
         <div className="flex items-center gap-3">
           <GsapMagnetic strength={0.2}>
             <Button
-              className="hidden cursor-pointer rounded-full sm:inline-flex"
+              className="hidden cursor-pointer rounded-full px-6 py-2.5 text-[14px] font-semibold shadow-[0_4px_20px_rgba(59,130,246,0.3)] sm:inline-flex"
               onClick={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
             >
               Solicitar demo
@@ -282,22 +294,29 @@ function Navbar() {
 
 function IndustriesBar() {
   return (
-    <div className="border-t border-b border-border py-10 md:py-14">
-      <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <p className="mb-6 text-center text-xs font-medium tracking-widest text-muted-foreground/60 uppercase">
-          Industrias que operan con Nexus TML
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-          {industries.map((ind) => (
-            <div
-              key={ind.label}
-              className="flex items-center gap-2.5 opacity-40 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-            >
-              <span className="text-lg">{ind.icon}</span>
-              <span className="text-sm font-bold text-foreground">{ind.label}</span>
+    <div className="relative border-t border-b border-white/[0.06] py-10 md:py-14">
+      <p className="mb-6 text-center text-sm font-semibold tracking-widest text-white/40 uppercase">
+        Industrias que operan con Nexus TML
+      </p>
+      <div className="relative mx-auto max-w-5xl">
+        <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-24 bg-gradient-to-r from-background to-transparent" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-24 bg-gradient-to-l from-background to-transparent" />
+        <Marquee className="[--duration:30s] [--gap:3rem]">
+          {[
+            { icon: Factory, label: "Manufactura" },
+            { icon: Pickaxe, label: "Minería" },
+            { icon: Fish, label: "Acuicultura" },
+            { icon: HardHat, label: "Construcción" },
+            { icon: Bolt, label: "Energía" },
+            { icon: Ship, label: "Logística" },
+            { icon: HeartPulse, label: "Salud" },
+          ].map((ind) => (
+            <div key={ind.label} className="flex flex-col items-center gap-2.5">
+              <ind.icon className="h-8 w-8 text-primary" strokeWidth={1.5} />
+              <span className="text-sm font-semibold text-white/70">{ind.label}</span>
             </div>
           ))}
-        </div>
+        </Marquee>
       </div>
     </div>
   )
@@ -312,135 +331,137 @@ export default function Page() {
 
       <main className="flex flex-col pt-16">
         {/* ── HERO ── */}
-        <section className="relative min-h-screen overflow-hidden pt-24 pb-16 md:pt-32 md:pb-20 lg:pt-40">
+        <section className="relative flex min-h-[calc(100vh-64px)] items-center overflow-hidden">
           <style>{`
-            @keyframes hero-device-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
-            @keyframes hero-chip-a { 0%,100%{transform:translate(0,0)} 50%{transform:translate(5px,-9px)} }
-            @keyframes hero-chip-b { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-5px,9px)} }
-
+            @keyframes pf1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+            @keyframes pf2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+            @keyframes pf3 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+            @keyframes glow-pulse { 0%,100%{opacity:0.15} 50%{opacity:0.25} }
           `}</style>
 
-          {/* Background layers */}
+          {/* Background effects */}
           <div className="pointer-events-none absolute inset-0" aria-hidden="true">
-            <div className="absolute -top-[360px] -left-[220px] h-[900px] w-[900px] rounded-full opacity-[0.2] blur-[100px]" style={{ background: "radial-gradient(circle, oklch(62% 0.19 245), transparent 65%)", animation: "hero-drift 16s ease-in-out infinite" }} />
-            <div className="absolute top-[40px] -right-[200px] h-[650px] w-[650px] rounded-full opacity-[0.14] blur-[100px]" style={{ background: "radial-gradient(circle, oklch(68% 0.17 210), transparent 65%)", animation: "hero-drift 20s ease-in-out infinite reverse" }} />
-            <div className="absolute bottom-[80px] left-[38%] h-[450px] w-[450px] rounded-full opacity-[0.08] blur-[100px]" style={{ background: "radial-gradient(circle, oklch(55% 0.2 270), transparent 65%)", animation: "hero-drift 13s ease-in-out infinite 5s" }} />
-            {/* Grid overlay */}
-            <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232459a8' fill-opacity='0.5'%3E%3Cpath d='M0 0h60v1H0zM0 0v60h1V0z'/%3E%3C/g%3E%3C/svg%3E\")" }} />
-            {/* Top gradient wash */}
-            <div className="absolute inset-x-0 top-0 h-[600px]" style={{ background: "radial-gradient(ellipse 90% 55% at 50% -10%, rgba(36,89,168,.22) 0%, transparent 55%)" }} />
+            {/* Glow behind phones */}
+            <div className="absolute top-[15%] right-[10%] h-[600px] w-[600px] rounded-full opacity-[0.14] blur-[120px]" style={{ background: "radial-gradient(circle, oklch(55% 0.22 245), transparent 60%)", animation: "glow-pulse 6s ease-in-out infinite" }} />
+            <div className="absolute bottom-[10%] right-[25%] h-[400px] w-[400px] rounded-full opacity-[0.10] blur-[100px]" style={{ background: "radial-gradient(circle, oklch(58% 0.18 260), transparent 60%)" }} />
+            {/* Subtle glow left */}
+            <div className="absolute top-[30%] -left-[10%] h-[500px] w-[500px] rounded-full opacity-[0.06] blur-[120px]" style={{ background: "radial-gradient(circle, oklch(55% 0.15 250), transparent 60%)" }} />
+            {/* Grid pattern */}
+            <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234488cc' fill-opacity='0.4'%3E%3Cpath d='M0 0h60v1H0zM0 0v60h1V0z'/%3E%3C/g%3E%3C/svg%3E\")", maskImage: "radial-gradient(ellipse 70% 60% at 65% 50%, black, transparent)" }} />
           </div>
 
           <div className="relative z-10 mx-auto max-w-[1280px] px-6 lg:px-12">
             <GsapHeroSequence steps={heroPresets.dramatic} delay={0.3}>
-              <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+              <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-10">
 
                 {/* Left — Content */}
                 <div className="flex flex-col items-start">
-                  <div data-gsap="badge" className="mb-8 inline-flex items-center gap-2.5 rounded-full border border-white/[0.09] bg-white/[0.04] px-4 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)] backdrop-blur-sm">
-                    <span className="h-[5px] w-[5px] rounded-full bg-primary" style={{ animation: "blink-cursor 2.4s ease-in-out infinite" }} />
-                    <span className="text-[11px] font-medium tracking-[0.12em] text-muted-foreground/60 uppercase">CMMS — Trazabilidad real</span>
+                  <div data-gsap="badge" className="mb-7 inline-flex items-center gap-2.5 rounded-full border border-white/[0.08] bg-white/[0.03] px-4 py-1.5 backdrop-blur-sm">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary shadow-[0_0_6px_2px_rgba(59,130,246,0.4)]" />
+                    <span className="text-[11px] font-medium tracking-[0.1em] text-muted-foreground/60 uppercase">Plataforma CMMS</span>
                   </div>
 
                   <h1
                     data-gsap="title"
-                    className="mb-7 text-4xl font-extrabold leading-[1.1] tracking-[-0.03em] sm:text-5xl lg:text-[58px]"
+                    className="mb-7 text-5xl font-extrabold leading-[1.15] tracking-[-0.03em] sm:text-6xl lg:text-[62px]"
                   >
-                    El Mantenimiento<br />
-                    que habla el idioma<br />
-                    <span className="text-gradient-accent">de tu industria.</span>
+                    El control total de tu{" "}
+                    <span className="italic text-primary">mantenimiento</span>
+                    <br />
+                    en una sola app
                   </h1>
 
                   <p
                     data-gsap="subtitle"
-                    className="mb-7 max-w-[455px] text-base leading-[1.82] tracking-[0.008em] text-muted-foreground"
+                    className="mb-8 max-w-[440px] text-base leading-[1.75] text-muted-foreground md:text-lg"
                   >
-                    Visualiza tu operación en tiempo real con dashboards precisos,
-                    una app móvil nativa y PM exacto. Centraliza tu gestión en una
-                    sola plataforma de rápida implementación.
+                    Gestiona órdenes de trabajo, activos,
+                    solicitudes y más, desde cualquier
+                    lugar y en tiempo real.
                   </p>
 
-                  <div data-gsap="cta" className="mb-3 flex flex-wrap items-center gap-4">
+                  <div data-gsap="cta" className="mb-10 flex flex-wrap items-center gap-4">
                     <GsapMagnetic strength={0.3}>
                       <Button
                         size="lg"
-                        className="cursor-pointer rounded-xl px-8 text-[15px] font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.24),inset_0_-1px_0_rgba(0,0,0,0.18),0_8px_34px_rgba(36,89,168,0.48)]"
+                        className="cursor-pointer rounded-xl px-8 text-[15px] font-semibold shadow-[0_8px_30px_rgba(59,130,246,0.35)]"
                         onClick={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
                       >
-                        Ver demo en vivo
+                        Solicitar demo
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Button>
                     </GsapMagnetic>
                     <Button
                       size="lg"
                       variant="outline"
-                      className="cursor-pointer rounded-xl border-white/[0.1] bg-white/[0.04] px-8 text-[15px] text-muted-foreground shadow-[inset_0_1px_0_rgba(255,255,255,0.07)] backdrop-blur-sm hover:bg-white/[0.08] hover:text-foreground"
+                      className="cursor-pointer rounded-xl border-white/[0.1] bg-white/[0.04] px-8 text-[15px] text-muted-foreground hover:bg-white/[0.08] hover:text-foreground"
                       onClick={() => window.open("https://app.nexustml.cl", "_blank")}
                     >
                       Explorar plataforma →
                     </Button>
                   </div>
 
-                  <div data-gsap="cta" className="flex items-center gap-5 border-t border-white/[0.055] pt-3">
-                    <div className="flex -space-x-2.5">
-                      {["JP", "MR", "AL", "CS"].map((initials) => (
-                        <div
-                          key={initials}
-                          className="flex h-[34px] w-[34px] items-center justify-center rounded-full border-[1.5px] border-background bg-gradient-to-br from-primary/70 to-primary/30 text-[10px] font-bold text-primary-foreground shadow-[0_2px_8px_rgba(0,0,0,0.32)]"
-                        >
-                          {initials}
+                  <div data-gsap="cta" className="flex flex-wrap items-start gap-8">
+                    {[
+                      { icon: Shield, label: "Seguro", sublabel: "y Confiable" },
+                      { icon: Timer, label: "En Tiempo Real", sublabel: "y Productivo" },
+                      { icon: BarChart3, label: "Datos Claros,", sublabel: "Mejores Decisiones" },
+                    ].map((feat) => (
+                      <div key={feat.label} className="flex flex-col items-center gap-2 text-center">
+                        <div className="flex h-11 w-11 items-center justify-center rounded-full border border-white/[0.12]">
+                          <feat.icon className="h-5 w-5 text-white/80" />
                         </div>
-                      ))}
-                    </div>
-                    <div>
-                      <p className="text-[13px] font-semibold text-foreground">+200 técnicos activos</p>
-                      <p className="text-[11.5px] text-muted-foreground/50">confían su operación diaria a Nexus TML</p>
-                    </div>
+                        <div>
+                          <p className="text-xs font-semibold text-foreground">{feat.label}</p>
+                          <p className="text-[11px] text-muted-foreground/60">{feat.sublabel}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
-                {/* Right — Device mockup with floating chips */}
-                <div data-gsap="image" className="relative origin-top-right scale-[0.88] lg:scale-[0.92]">
-                  {/* Device */}
-                  <div className="relative" style={{ animation: "hero-device-float 10s ease-in-out infinite", filter: "drop-shadow(0 50px 80px rgba(0,0,0,0.6)) drop-shadow(0 0 50px rgba(36,89,168,0.2))" }}>
-                    <div className="overflow-hidden rounded-[13px] border border-white/[0.1] bg-[#04091a] shadow-[inset_0_1px_0_rgba(255,255,255,0.14),inset_0_-1px_0_rgba(0,0,0,0.55)]">
-                      <div className="flex h-8 items-center gap-3 border-b border-white/[0.052] px-3.5" style={{ background: "linear-gradient(to bottom, rgba(255,255,255,0.055), rgba(255,255,255,0.018))" }}>
-                        <div className="flex gap-[5px]">
-                          <span className="block h-[9px] w-[9px] rounded-full bg-[rgba(255,95,87,0.75)]" />
-                          <span className="block h-[9px] w-[9px] rounded-full bg-[rgba(254,188,46,0.75)]" />
-                          <span className="block h-[9px] w-[9px] rounded-full bg-[rgba(40,200,65,0.75)]" />
-                        </div>
-                        <div className="mx-auto max-w-[220px] rounded-[5px] border border-white/[0.07] bg-white/[0.05] px-3 py-[3px] text-center font-mono text-[10px] text-white/20 tracking-[0.03em]">
-                          app.nexustml.cl/dashboard
-                        </div>
+                {/* Right — 3 Phone mockups, tightly grouped */}
+                <div data-gsap="image" className="relative mx-auto flex h-[480px] w-full max-w-[540px] items-end justify-center pb-10 md:h-[580px] md:pb-14 lg:h-[640px]">
+                  {/* Glow behind phones */}
+                  <div className="pointer-events-none absolute bottom-[18%] left-1/2 -translate-x-1/2 h-[600px] w-[600px] rounded-full opacity-[0.45] blur-[100px]" style={{ background: "radial-gradient(circle, oklch(48% 0.28 245), transparent 60%)" }} />
+
+                  {/* Phone 1 — Login (left / behind) */}
+                  <div
+                    className="absolute bottom-0 left-0 z-0 w-[160px] md:w-[185px] lg:w-[200px]"
+                    style={{ animation: "pf1 7s ease-in-out infinite" }}
+                  >
+                    <div className="rounded-[38px] bg-[#1c1c1e] p-[4px] shadow-[0_25px_60px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-1px_0_rgba(0,0,0,0.4)]" style={{ border: "2px solid rgba(255,255,255,0.35)" }}>
+                      <div className="relative overflow-hidden rounded-[30px]">
+                        <div className="pointer-events-none absolute top-0 left-1/2 z-10 h-[18px] w-[55px] -translate-x-1/2 rounded-b-[14px] bg-[#1c1c1e]" />
+                        <img src="/images/screen-login.jpeg" alt="TML NEXUS — Login" className="w-full" />
                       </div>
-                      <HeroDashboardMockup />
                     </div>
                   </div>
 
-                  {/* Floating KPI chips */}
-                  <div className="pointer-events-none absolute -top-[18px] -left-7 z-10 hidden rounded-2xl border border-white/[0.1] bg-[rgba(3,8,20,0.92)] p-3.5 shadow-[0_28px_60px_rgba(0,0,0,0.58),inset_0_1px_0_rgba(255,255,255,0.11)] backdrop-blur-[36px] md:block" style={{ animation: "hero-chip-a 8s ease-in-out infinite" }}>
-                    <div className="text-[9.5px] font-semibold tracking-[0.1em] text-muted-foreground/50 uppercase">Disponibilidad</div>
-                    <div className="text-2xl font-extrabold text-primary">98.2%</div>
-                    <div className="text-[10.5px] text-muted-foreground/40">Actualizado en tiempo real</div>
+                  {/* Phone 2 — Órdenes (center / front) */}
+                  <div
+                    className="relative z-20 w-[180px] md:w-[210px] lg:w-[230px]"
+                    style={{ animation: "pf2 8s ease-in-out infinite 0.4s" }}
+                  >
+                    <div className="rounded-[42px] bg-[#1c1c1e] p-[5px] shadow-[0_35px_80px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-1px_0_rgba(0,0,0,0.4),0_0_40px_rgba(59,130,246,0.06)]" style={{ border: "2px solid rgba(255,255,255,0.35)" }}>
+                      <div className="relative overflow-hidden rounded-[34px]">
+                        <div className="pointer-events-none absolute top-0 left-1/2 z-10 h-[20px] w-[65px] -translate-x-1/2 rounded-b-[14px] bg-[#1c1c1e]" />
+                        <img src="/images/screen-ordenes.jpeg" alt="TML NEXUS — Órdenes de trabajo" className="w-full" />
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="pointer-events-none absolute -bottom-1 -right-8 z-10 hidden rounded-2xl border border-white/[0.1] bg-[rgba(3,8,20,0.92)] p-3.5 shadow-[0_28px_60px_rgba(0,0,0,0.58),inset_0_1px_0_rgba(255,255,255,0.11)] backdrop-blur-[36px] md:block" style={{ animation: "hero-chip-b 10s ease-in-out infinite" }}>
-                    <div className="text-[9.5px] font-semibold tracking-[0.1em] text-muted-foreground/50 uppercase">Cumplimiento PM</div>
-                    <div className="text-2xl font-extrabold text-teal-400">97%</div>
-                    <div className="text-[10.5px] text-muted-foreground/40">Meta: &gt;90%</div>
-                  </div>
-
-                  <div className="pointer-events-none absolute -top-3.5 -right-8 z-10 hidden rounded-2xl border border-white/[0.1] bg-[rgba(3,8,20,0.92)] p-3.5 shadow-[0_28px_60px_rgba(0,0,0,0.58),inset_0_1px_0_rgba(255,255,255,0.11)] backdrop-blur-[36px] md:block" style={{ animation: "hero-chip-a 12s ease-in-out infinite 2s" }}>
-                    <div className="text-[9.5px] font-semibold tracking-[0.1em] text-muted-foreground/50 uppercase">OTs críticas</div>
-                    <div className="text-2xl font-extrabold text-amber-400">0</div>
-                    <div className="text-[10.5px] text-teal-400/60">Sin urgencias</div>
-                  </div>
-
-                  <div className="pointer-events-none absolute top-[46%] -left-7 z-10 hidden rounded-2xl border border-white/[0.1] bg-[rgba(3,8,20,0.92)] p-3.5 shadow-[0_28px_60px_rgba(0,0,0,0.58),inset_0_1px_0_rgba(255,255,255,0.11)] backdrop-blur-[36px] md:block" style={{ animation: "hero-chip-a 11s ease-in-out infinite 3s" }}>
-                    <div className="text-[9.5px] font-semibold tracking-[0.1em] text-muted-foreground/50 uppercase">MTTR</div>
-                    <div className="text-2xl font-extrabold text-indigo-400">2.4h</div>
-                    <div className="text-[10.5px] text-muted-foreground/40">Tiempo medio de reparación</div>
+                  {/* Phone 3 — Sidebar (right / behind) */}
+                  <div
+                    className="absolute bottom-0 right-0 z-10 w-[160px] md:w-[185px] lg:w-[200px]"
+                    style={{ animation: "pf3 9s ease-in-out infinite 0.8s" }}
+                  >
+                    <div className="rounded-[38px] bg-[#1c1c1e] p-[4px] shadow-[0_25px_60px_rgba(0,0,0,0.7),inset_0_1px_0_rgba(255,255,255,0.06),inset_0_-1px_0_rgba(0,0,0,0.4)]" style={{ border: "2px solid rgba(255,255,255,0.35)" }}>
+                      <div className="relative overflow-hidden rounded-[30px]">
+                        <div className="pointer-events-none absolute top-0 left-1/2 z-10 h-[18px] w-[55px] -translate-x-1/2 rounded-b-[14px] bg-[#1c1c1e]" />
+                        <img src="/images/screen-sidebar.jpeg" alt="TML NEXUS — Menú de navegación" className="w-full" />
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -471,6 +492,33 @@ export default function Page() {
                 </p>
               </div>
 
+              {/* MacBook 3D mockup */}
+              <div className="mx-auto mb-16 max-w-4xl">
+                <div>
+                  {/* Screen */}
+                  <div className="rounded-t-2xl border-[3px] border-[#2a2a2e] bg-[#1c1c1e] p-[5px] shadow-[0_40px_80px_rgba(0,0,0,0.5),0_0_60px_rgba(59,130,246,0.08)]">
+                    <div className="flex h-8 items-center gap-2 rounded-t-xl bg-[#2a2a2e] px-4">
+                      <div className="flex gap-1.5">
+                        <span className="block h-[10px] w-[10px] rounded-full bg-[#ff5f57]" />
+                        <span className="block h-[10px] w-[10px] rounded-full bg-[#febc2e]" />
+                        <span className="block h-[10px] w-[10px] rounded-full bg-[#28c840]" />
+                      </div>
+                      <div className="mx-auto rounded-md bg-white/[0.06] px-6 py-[3px] text-center font-mono text-[11px] text-white/30">
+                        app.nexustml.cl/dashboard
+                      </div>
+                    </div>
+                    <div className="overflow-hidden rounded-b-xl">
+                      <img src="/images/screen-dashboard-web.jpeg" alt="TML NEXUS — Dashboard de KPIs en tiempo real" className="w-full" />
+                    </div>
+                  </div>
+                  {/* MacBook base/hinge */}
+                  <div className="relative mx-auto h-4 w-[85%] rounded-b-lg bg-gradient-to-b from-[#3a3a3e] to-[#2a2a2e]">
+                    <div className="absolute left-1/2 top-[2px] h-[4px] w-[60px] -translate-x-1/2 rounded-full bg-white/[0.08]" />
+                  </div>
+                  <div className="mx-auto h-[6px] w-[102%] -mt-[1px] rounded-b-xl bg-[#222224] shadow-[0_8px_30px_rgba(0,0,0,0.5)]" />
+                </div>
+              </div>
+
               <GsapStaggerGrid
                 animation="scale"
                 from="center"
@@ -481,12 +529,12 @@ export default function Page() {
                 {painPoints.map((pain) => (
                   <div
                     key={pain.title}
-                    className="group relative overflow-hidden rounded-2xl border border-red-500/10 bg-red-500/[0.03] p-8 transition-colors hover:border-red-500/20"
+                    className="group relative overflow-hidden rounded-2xl border border-violet-500/25 bg-violet-500/[0.08] p-6 transition-colors hover:border-violet-500/40 hover:bg-violet-500/[0.12]"
                   >
-                    <pain.icon className="mb-4 h-8 w-8 text-red-400/80" />
-                    <div className="mb-2 font-mono text-4xl font-bold text-red-400">{pain.stat}</div>
-                    <h3 className="mb-3 text-lg font-semibold">{pain.title}</h3>
-                    <p className="text-sm leading-relaxed text-muted-foreground">{pain.description}</p>
+                    <pain.icon className="mb-3 h-7 w-7 text-violet-400" />
+                    <div className="mb-1.5 font-mono text-3xl font-bold text-violet-400">{pain.stat}</div>
+                    <h3 className="mb-2 text-base font-bold text-white">{pain.title}</h3>
+                    <p className="text-sm leading-relaxed text-white/60">{pain.description}</p>
                   </div>
                 ))}
               </GsapStaggerGrid>
@@ -512,26 +560,29 @@ export default function Page() {
                 />
               </div>
 
-              <div className="mx-auto grid max-w-6xl grid-cols-2 gap-5 md:gap-8 lg:grid-cols-4">
+              <div className="mx-auto grid max-w-6xl grid-cols-2 gap-5 md:gap-6 lg:grid-cols-4">
                 {[
-                  { value: 99.99, suffix: "%", label: "Disponibilidad Mtto", description: "Uptime de activos críticos" },
-                  { value: 28, suffix: "d", label: "MTBF promedio", description: "Tiempo medio entre fallas" },
-                  { value: 2, suffix: "h", label: "MTTR promedio", description: "Tiempo medio de reparación" },
-                  { value: 8, suffix: " sem", label: "Go-live completo", description: "De kickoff a producción" },
+                  { value: 99.99, suffix: "%", label: "Disponibilidad Mtto", description: "Uptime de activos críticos", icon: Shield },
+                  { value: 28, suffix: "d", label: "MTBF promedio", description: "Tiempo medio entre fallas", icon: Timer },
+                  { value: 2, suffix: "h", label: "MTTR promedio", description: "Tiempo medio de reparación", icon: Zap },
+                  { value: 8, suffix: " sem", label: "Go-live completo", description: "De kickoff a producción", icon: CalendarCheck },
                 ].map((stat) => (
                   <div
                     key={stat.label}
-                    className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 text-center md:p-8"
+                    className="group rounded-2xl border border-primary/15 bg-primary/[0.04] p-6 text-center transition-all hover:border-primary/30 hover:bg-primary/[0.08]"
                   >
-                    <div className="flex items-center justify-center gap-0.5">
+                    <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 transition-colors group-hover:bg-primary/20">
+                      <stat.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="flex items-baseline justify-center gap-0.5">
                       <NumberTicker
                         value={stat.value}
-                        className="font-mono text-3xl font-bold tracking-tight text-primary md:text-5xl"
+                        className="font-mono text-4xl font-bold tracking-tight text-white"
                       />
-                      <span className="text-xl font-bold text-primary/60 md:text-2xl">{stat.suffix}</span>
+                      <span className="text-lg font-bold text-primary">{stat.suffix}</span>
                     </div>
-                    <p className="mt-2 text-sm font-semibold">{stat.label}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{stat.description}</p>
+                    <p className="mt-2 text-sm font-bold text-white/90">{stat.label}</p>
+                    <p className="mt-1 text-xs text-white/45">{stat.description}</p>
                   </div>
                 ))}
               </div>
@@ -621,35 +672,54 @@ export default function Page() {
             </GsapScrollReveal>
 
             <div className="mx-auto max-w-5xl">
-              <GsapStaggerGrid
-                animation="fade-up"
-                from="start"
-                staggerAmount={0.8}
-                className="flex flex-col gap-6"
-              >
-                {implementationSteps.map((step) => (
-                  <div
-                    key={step.number}
-                    className="group flex gap-5 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 transition-all hover:border-primary/20 hover:bg-white/[0.04] md:p-7"
-                  >
-                    <div className="flex flex-col items-center">
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 transition-colors group-hover:bg-primary/20">
-                        <step.icon className="h-5 w-5 text-primary" />
+              <div className="grid grid-cols-1 gap-0 lg:grid-cols-[1fr_280px] lg:gap-12">
+                {/* Timeline */}
+                <GsapStaggerGrid
+                  animation="fade-up"
+                  from="start"
+                  staggerAmount={0.6}
+                  className="relative flex flex-col gap-0"
+                >
+                  <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-primary/40 via-primary/20 to-transparent" />
+
+                  {implementationSteps.map((step) => (
+                    <div
+                      key={step.number}
+                      className="group relative flex gap-5 py-3 md:gap-6"
+                    >
+                      <div className="relative z-10 flex flex-col items-center">
+                        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-primary/30 bg-primary/10 transition-all group-hover:border-primary/60 group-hover:bg-primary/20 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.2)]">
+                          <step.icon className="h-5 w-5 text-primary" />
+                        </div>
                       </div>
-                      {step.number !== "05" && <div className="mt-2 h-full w-px bg-border" />}
+                      <div className="flex-1">
+                        <div className="mb-2 flex items-center gap-3">
+                          <h3 className="text-xl font-bold text-white">{step.title}</h3>
+                          <span className="rounded-full bg-primary/10 px-3 py-0.5 font-mono text-xs font-bold text-primary">
+                            {step.weeks}
+                          </span>
+                        </div>
+                        <p className="max-w-lg text-base leading-relaxed text-white/50">{step.description}</p>
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <div className="mb-1.5 flex items-center gap-3">
-                        <h3 className="text-lg font-semibold">{step.title}</h3>
-                        <span className="rounded-full bg-primary/10 px-3 py-0.5 font-mono text-xs font-medium text-primary">
-                          {step.weeks}
-                        </span>
+                  ))}
+                </GsapStaggerGrid>
+
+                {/* Phone mockup sticky */}
+                <div className="hidden lg:flex lg:items-center lg:justify-center">
+                  <div className="sticky top-24 w-[250px]">
+                    <div className="pointer-events-none absolute -inset-20 -z-10 rounded-full opacity-[0.60] blur-[60px]" style={{ background: "radial-gradient(circle, oklch(45% 0.28 245), transparent 60%)" }} />
+                    <div className="rounded-[36px] bg-[#1c1c1e] p-[4px] shadow-[0_30px_60px_rgba(0,0,0,0.5),0_0_30px_rgba(59,130,246,0.06)]" style={{ border: "2px solid rgba(255,255,255,0.35)" }}>
+                      <div className="relative overflow-hidden rounded-[32px] bg-white">
+                        <div className="pointer-events-none absolute top-0 left-1/2 z-10 h-[16px] w-[55px] -translate-x-1/2 rounded-b-[12px] bg-[#1c1c1e]" />
+                        <div className="aspect-[9/19]">
+                          <PhoneNuevaOT />
+                        </div>
                       </div>
-                      <p className="text-sm leading-relaxed text-muted-foreground">{step.description}</p>
                     </div>
                   </div>
-                ))}
-              </GsapStaggerGrid>
+                </div>
+              </div>
             </div>
           </div>
         </GsapParallaxSection>
@@ -661,10 +731,7 @@ export default function Page() {
           </section>
         </GsapScrollReveal>
 
-        {/* ── TESTIMONIALS ── */}
-        <GsapScrollReveal animation="fade-up">
-          <Testimonials />
-        </GsapScrollReveal>
+        {/* ── TESTIMONIALS — removed ── */}
 
         {/* ── CTA FINAL ── */}
         <GsapScrollReveal animation="scale-up">
@@ -802,7 +869,7 @@ export default function Page() {
               {/* Brand column */}
               <div className="md:col-span-4 lg:col-span-5">
                 <div className="flex items-center gap-2.5">
-                  <Image src="/images/logo-nexus.png" alt="TML NEXUS" width={36} height={36} className="rounded-lg" />
+                  <Image src="/images/logo-nexus-white.png" alt="TML NEXUS" width={32} height={32} />
                   <span className="text-lg font-bold tracking-tight">TML NEXUS</span>
                 </div>
                 <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">

@@ -63,35 +63,27 @@ export function MobileShowcase() {
             />
 
             <div
-              className="relative w-[170px] shrink-0 md:w-[190px]"
+              className="relative w-[220px] shrink-0 md:w-[260px]"
               style={{ animation: "phone-float 8s ease-in-out infinite" }}
             >
-              <Image
-                src="/images/dashboard-mobile.jpeg"
-                alt="Nexus TML — App móvil MTBF y MTTR"
-                width={739}
-                height={1600}
-                quality={100}
-                className="w-full rounded-[24px] border-2 border-white/[0.1] shadow-[0_32px_64px_rgba(0,0,0,0.6)]"
-              />
+              <div className="rounded-[32px] bg-[#1c1c1e] p-[4px] shadow-[0_32px_64px_rgba(0,0,0,0.6)]" style={{ border: "2px solid rgba(255,255,255,0.35)" }}>
+                <div className="relative overflow-hidden rounded-[28px]">
+                  <div className="pointer-events-none absolute top-0 left-1/2 z-10 h-[16px] w-[55px] -translate-x-1/2 rounded-b-[12px] bg-[#1c1c1e]" />
+                  <img src="/images/dashboard-mobile.jpeg" alt="Nexus TML — App móvil MTBF y MTTR" className="w-full" />
+                </div>
+              </div>
             </div>
 
             <div
-              className="relative -ml-6 z-10 w-[190px] shrink-0 md:w-[210px]"
+              className="relative -ml-10 z-10 w-[240px] shrink-0 md:w-[290px]"
               style={{ animation: "phone-alarm 4s ease-in-out infinite" }}
             >
-              <Image
-                src="/images/dashboard-mobile-2.jpeg"
-                alt="Nexus TML — App móvil Dashboard"
-                width={739}
-                height={1600}
-                quality={100}
-                className="w-full rounded-[28px] border-2 border-white/[0.1]"
-                style={{
-                  boxShadow:
-                    "0 40px 80px rgba(36,89,168,0.35), 0 0 0 1px rgba(36,89,168,0.3)",
-                }}
-              />
+              <div className="rounded-[36px] bg-[#1c1c1e] p-[5px] shadow-[0_40px_80px_rgba(36,89,168,0.35),0_0_40px_rgba(59,130,246,0.08)]" style={{ border: "2px solid rgba(255,255,255,0.35)" }}>
+                <div className="relative overflow-hidden rounded-[31px]">
+                  <div className="pointer-events-none absolute top-0 left-1/2 z-10 h-[18px] w-[65px] -translate-x-1/2 rounded-b-[14px] bg-[#1c1c1e]" />
+                  <img src="/images/dashboard-mobile-2.jpeg" alt="Nexus TML — App móvil Dashboard" className="w-full" />
+                </div>
+              </div>
             </div>
           </div>
 
